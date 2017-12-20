@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.xwsx.dao.MenuDao">
+
+    <resultMap id="MenuResultMap" type="org.xwsx.bean.Menu">
+        <result column="name" property="name" />
+        <result column="url" property="url" />
+        <result column="parent_id" property="parentId" />
+        <result column="order_num" property="orderNum" />
+    </resultMap>
+    <select id="getList" resultType="Menu">
+        select id,name,url,parent_id,order_num from sys_menu
+    </select>
+</mapper>

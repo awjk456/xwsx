@@ -12,7 +12,7 @@ public class Ad extends BaseBean{
     private String link;
     private String id;
     private String imgFileName;
-    private String weight;   private String weig2ht;   private String weig3ht;   private String weig4ht;
+    private String weight;
 
     public String getTitle() {
         return title;
